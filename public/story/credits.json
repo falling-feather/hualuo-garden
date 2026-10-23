@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "credit": "原创场景演绎 · AI辅助绘制",
+  "created": "2026-10-20",
+  "artistReference": {
+    "label": "戴敦邦《红楼梦》画作参考",
+    "title": "百卅交大·红楼梦华——戴敦邦全本红楼梦画集",
+    "url": "https://www.jiaodapress.com.cn/Data/BookContent/21715",
+    "note": "此链接为画集资料参考，本作当前插画并非戴敦邦原画。替换为其他画作时，请同时填写对应图像的作者与来源。"
+  },
+  "images": {
+    "painting": {"url":"/story/liulaolao-scroll.png","layout":"triptych","panels":[0,0,0],"alt":"刘姥姥与贾母在园中临水观景的原创场景演绎","credit":"原创场景演绎 · AI辅助绘制","source":""},
+    "banquet": {"url":"/story/banquet-sequence.png","layout":"triptych","panels":[0,1,2],"alt":"秋爽斋晓翠堂的近坐招待、夹鸽蛋与饭后交谈，原创三联场景演绎","credit":"原创场景演绎 · AI辅助绘制","source":""},
+    "tea": {"url":"/story/liulaolao-scroll.png","layout":"triptych","panels":[2,2,2],"alt":"栊翠庵人物与茶事的原创场景演绎，人物同框为艺术编排","credit":"原创场景演绎 · AI辅助绘制","source":""}
+  },
+  "generation": [
+    {"file":"liulaolao-scroll.png","tool":"image_gen","result":"exec-f001e332-8062-485f-b593-4d6f245b8383","description":"观园、宴席、茶事三联原创图；妙玉保留发髻；非原作复制。"},
+    {"file":"banquet-sequence.png","tool":"image_gen","result":"exec-f95bdd66-7964-4e6c-ad47-892fac96778f","description":"第四十回晓翠堂早饭三联原创图；非原作复制。"}
+  ]
+}

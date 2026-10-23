@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#273b32" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="循曲径，听水声，在大观园的花木与院落之间漫游。" />
+    <title>花落知多少 · 大观园</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="garden" aria-label="可交互的大观园三维场景" tabindex="0"></canvas>
+      <div id="poster" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+      <header class="topbar">
+        <button class="brand" id="home" aria-label="返回大观园全景">
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 29C6 34 4 22 13 19C3 8 18 4 20 15C23 3 36 11 28 19C39 24 29 35 20 29Z" stroke="currentColor"/><path d="M20 21V36M14 25L20 21L26 25M20 21L17 14M20 21L25 15" stroke="currentColor"/></svg>
+          <span><strong>花落知多少</strong><small>大观园 · 数字诗境</small></span>
+        </button>
+        <nav class="top-actions" aria-label="游园工具">
+          <button id="journal-toggle" class="pill" aria-haspopup="dialog">拾忆 <span id="memory-count">0 / 3</span></button>
+          <button id="map-toggle" class="pill" aria-expanded="false"><span class="icon">⌘</span>园中</button>
+          <button id="time-toggle" class="pill" aria-expanded="false"><span class="sun-icon">☼</span>天时</button>
+          <button id="walk-toggle" class="pill" aria-pressed="false">漫步</button>
+          <button id="sound-toggle" class="pill" aria-pressed="false">园声<span class="sound-dot"></span></button>
+          <button id="hide-ui" class="icon-button" aria-label="静赏，隐藏界面" title="静赏（H）">⌗</button>
+        </nav>
+      </header>
+
+      <section id="welcome" class="welcome">
+        <p class="eyebrow">一园一世界</p>
+        <h1>花落<span>知多少</span></h1>
+        <div class="seal" aria-hidden="true">入<br>梦</div>
+        <p class="welcome-copy">为迎接皇妃元春归家省亲，贾府建起这座园子。<br>后来住进了宝玉与姐妹们的日常。<br>这一次，借乡间老人刘姥姥的目光看园。</p>
+        <button id="enter" class="enter" disabled><span>园景载入中</span><span aria-hidden="true">→</span></button>
+        <button id="new-journey" class="new-journey" hidden>重新游园 · 清空本机经历</button>
+        <p id="resume-note" class="resume-note" role="status"></p>
+        <div id="loading" role="status" aria-live="polite">
+          <div class="progress-track"><i id="progress"></i></div>
+          <span id="loading-text">正在展开园景</span>
+        </div>
+      </section>
+
+      <aside id="map-panel" class="panel map-panel" aria-label="游园图" hidden>
+        <div class="panel-heading"><div><span class="eyebrow">寻景</span><h2>园中</h2></div><button class="close" data-close="map" aria-label="关闭游园图">×</button></div>
+        <div id="mini-map" class="mini-map"></div>
+        <div class="route-heading"><span>二十二处景致</span><button id="overview">全园回望 ↗</button></div>
+        <div id="landmark-list" class="landmark-list"></div>
+      </aside>
+
+      <aside id="time-panel" class="panel time-panel" aria-label="天时与环境" hidden>
+        <div class="panel-heading"><div><span class="eyebrow">光阴</span><h2>天时</h2></div><button class="close" data-close="time" aria-label="关闭天时">×</button></div>
+        <div class="clock-line"><strong id="clock">08:12</strong><span id="traditional-time">辰时</span></div>
+        <label class="slider-label" for="time-range">一天的光影<span>夜 · 晨 · 昼 · 暮</span></label>
+        <input id="time-range" type="range" min="0" max="24" step="0.05" value="8.2" aria-label="一天的时间" />
+        <div class="time-presets"><button data-hour="6.8">晨光</button><button data-hour="13.5">日中</button><button data-hour="17.6">薄暮</button><button data-hour="22">月夜</button></div>
+        <label class="play-line"><input id="time-playing" type="checkbox" /><span>让时光缓缓流转</span><i></i></label>
+        <div class="section-label">天气</div>
+        <div class="choice-grid" id="weather-options"><button data-weather="clear" aria-pressed="true">晴</button><button data-weather="mist" aria-pressed="false">薄雾</button><button data-weather="rain" aria-pressed="false">细雨</button><button data-weather="snow" aria-pressed="false">飞雪</button></div>
+        <div class="section-label">四时</div>
+        <div class="choice-grid" id="season-options"><button data-season="spring" aria-pressed="true">春</button><button data-season="summer" aria-pressed="false">夏</button><button data-season="autumn" aria-pressed="false">秋</button><button data-season="winter" aria-pressed="false">冬</button></div>
+        <div class="quality-line"><label for="quality">画面</label><select id="quality"><option value="fine">精致</option><option value="smooth">流畅</option></select></div>
+        <p id="time-ending-note" hidden>此番游览已入雪后。可在拾忆册选择“重新游园”，回到秋日。</p>
+      </aside>
+
+      <div id="memory-points" aria-label="园中记忆光点"></div>
+      <div id="viewfinder" hidden aria-hidden="true"><span>这一角园景，留给园外的人</span></div>
+      <aside id="journey-stage" class="journey-stage" aria-labelledby="stage-title" hidden>
+        <button id="stage-close" class="close" aria-label="暂回园中">×</button>
+        <span class="eyebrow">走进这一幕</span><h2 id="stage-title"></h2><p id="stage-text"></p><img id="stage-picture" alt="你亲自选取的这一角园景" hidden>
+        <div id="stage-subjects"><button data-subject="water" aria-pressed="true">亭台水光</button><button data-subject="path" aria-pressed="false">来时曲径</button></div>
+        <p id="stage-progress"></p><button id="stage-primary" class="stage-primary"></button><button id="stage-secondary"></button><p id="stage-origin"></p>
+      </aside>
+      <button id="cup-deliver" class="cup-deliver" hidden><kbd>E</kbd> 把杯子包好</button>
+      <span id="table-drag-hint" hidden>拖动小桌 →</span>
+      <section id="exploration" class="exploration" aria-label="游园提示" hidden>
+        <p id="route-whisper" hidden></p>
+        <p id="exploration-hint">循着金色光点慢慢走，也可打开拾忆册寻路。</p>
+        <div><button id="nearby-interact" hidden><kbd>E</kbd> 展开记忆</button><button id="memory-journal">拾忆册 · 寻路 ↗</button><button id="guide-toggle" aria-pressed="true">收起引线</button></div>
+        <p id="story-status" class="story-status" role="status" aria-live="polite"></p>
+      </section>
+      <div id="touch-walk" class="touch-walk" aria-label="触屏行走">
+        <button data-move="forward" aria-label="向前走">↑</button><button data-move="left" aria-label="向左走">←</button><button data-move="backward" aria-label="向后走">↓</button><button data-move="right" aria-label="向右走">→</button>
+      </div>
+      <p id="ending-note" class="ending-note" hidden>园子还在，人声已远。</p>
+      <aside id="painting-revisit" class="painting-revisit" aria-labelledby="painting-revisit-title" hidden>
+        <button id="painting-revisit-close" class="close" aria-label="收起旧画">×</button>
+        <span class="eyebrow">画中秋日 · 眼前雪色</span><h2 id="painting-revisit-title">我曾在这里留景</h2>
+        <img id="painting-revisit-image" alt="你当时亲自选取的三维园景">
+        <p id="painting-revisit-note"></p><button id="painting-revisit-return">收起画笺，继续看园 →</button>
+      </aside>
+      <div id="snow-veil" aria-hidden="true"></div>
+
+      <dialog id="journal-dialog" aria-labelledby="journal-title">
+        <button class="close" id="journal-close" aria-label="关闭拾忆册">×</button>
+        <span class="eyebrow">沿着人的目光，重新看园</span><h2 id="journal-title">拾忆册</h2>
+        <p id="journal-progress"></p><p>阅读原文，再在园中做一件事。顺序自选；“到这里”会带你抵达院前。</p>
+        <nav class="journal-tabs" aria-label="切换经历"><button data-journal-tab="painting">画中游</button><button data-journal-tab="banquet">一席笑声</button><button data-journal-tab="tea">一盏茶的距离</button><button data-journal-tab="ending">雪中回望</button></nav>
+        <ol id="journal-items"></ol>
+        <button id="restart-garden" class="return-garden">重新游园 · 清空本机经历</button>
+        <p id="save-status" class="journal-footnote" role="status">经历与位置保留在本机浏览器，可刷新后继续。</p>
+      </dialog>
+
+      <dialog id="memory-dialog" aria-labelledby="memory-title">
+        <button id="memory-close" class="close" aria-label="暂时合页，返回园中">×</button>
+        <div class="memory-spread">
+          <figure id="memory-art">
+            <div class="memory-image-window"><img id="memory-image" alt="" decoding="async" /></div>
+            <figcaption id="memory-art-credit"></figcaption><p id="memory-art-error" hidden>图像暂未载入，仍可继续阅读原文。</p>
+          </figure>
+          <div id="memory-blank" class="memory-blank"><span>雪中回望</span><div id="memory-recap"></div><i></i></div>
+          <article id="memory-content">
+            <span id="memory-location" class="eyebrow"></span>
+            <div class="memory-tabs" role="group" aria-label="切换原文与此刻"><button data-reading-tab="story" aria-pressed="true">原文与人物</button><button data-reading-tab="reflection" aria-pressed="false">此刻与我的经历</button></div>
+            <h2 id="memory-title"></h2><span class="text-label">原文</span><blockquote id="memory-quote"></blockquote>
+            <p id="memory-reading"></p><div class="memory-reflection" id="reflection-panel" hidden><p id="memory-reflection"></p><div id="experience-picker" class="memory-tabs" hidden><button data-experience="painting">画笺</button><button data-experience="banquet">小桌</button><button data-experience="tea">茶杯</button></div><p id="memory-experience"></p></div>
+            <div class="memory-sources"><span id="memory-chapter"></span><a id="memory-source" target="_blank" rel="noopener">读这一回原文 ↗</a><a id="image-source" target="_blank" rel="noopener" hidden>画作来源 ↗</a></div>
+          </article>
+        </div>
+        <div class="memory-bottom"><button id="memory-prev" aria-label="上一页">← 前页</button><span id="memory-pagination" aria-live="polite"></span><button id="memory-next">继续翻页 →</button></div>
+        <div class="artwork-credits"><button id="credits-toggle">图像与创作说明 ↗</button><span>AI辅助原创插画 · 动作片段为创作补足</span></div>
+      </dialog>
+      <dialog id="credits-dialog" aria-labelledby="credits-title"><button id="credits-close" class="close" aria-label="关闭创作说明">×</button><span class="eyebrow">原典、演绎与来源</span><h2 id="credits-title">图像与创作说明</h2><p id="artwork-note"></p><a id="artist-reference" target="_blank" rel="noopener"></a><p>三维园景与交互由本项目程序制作。取景、小桌拖动、送杯步行与雪中物件回收为创作补足，不冒称原著记载玩家参与。玩家取景来自实际三维画面。</p><p>书中原文标明回目；原创AI辅助插画不署名为戴敦邦作品。第三方实拍表面的作者、CC0许可与校验保存在项目来源文件。</p></dialog>
+
+      <section id="caption" class="caption" hidden aria-live="polite">
+        <div class="caption-top"><span id="caption-number">大观</span><span id="caption-subtitle">芳园一日</span></div>
+        <h2 id="caption-name">大观园</h2>
+        <p id="place-context" hidden></p>
+        <p id="caption-quote">衔山抱水建来精，多少工夫筑始成。</p>
+        <div class="caption-actions"><button id="read" hidden>读原文 <span>↗</span></button><button id="building-overview" hidden>观其形</button><button id="interior" hidden>入室</button></div>
+      </section>
+      <footer id="footer" hidden><span id="control-hint">拖动环览 · 滚轮靠近 · 双击建筑入院</span><button id="about">关于这座园</button></footer>
+      <button id="restore-ui" class="restore-ui" hidden aria-label="显示游园界面">返回游园界面</button>
+      <div id="detail-loading" class="detail-loading" role="status" hidden>正在细看这一处景致…</div>
+      <div id="error" class="error" role="alert" hidden><strong>园景暂未完整载入</strong><p id="error-text"></p><button id="retry">重新载入</button></div>
+
+      <dialog id="reading-dialog">
+        <button id="reading-close" class="close" aria-label="关闭阅读">×</button>
+        <span class="eyebrow" id="reading-chapter"></span>
+        <h2 id="reading-name"></h2>
+        <blockquote id="reading-quote"></blockquote>
+        <p id="reading-description"></p>
+        <div id="reading-evidence" class="evidence"></div>
+        <button id="return-garden" class="return-garden">合笺回望 →</button>
+      </dialog>
+      <dialog id="about-dialog">
+        <button class="close" id="about-close" aria-label="关闭说明">×</button>
+        <span class="eyebrow">花落知多少</span><h2>一座可行走的红楼园林</h2>
+        <p>以刘姥姥游园时的惊喜、笑声和茶盏为线索，体会同一座园子里不同的生活尺度。三处记忆读毕，可在远端主动进入雪中回望；雪后仍能自由游走。</p>
+        <p>大观园初为元春省亲营建；此后宝玉与姐妹们入园居住，礼仪盛景也有了读书、作诗和起居的日常。沿途短语提示眼前地点与人的联系；路上的淡色叶片只是可收起的游园引线，自由选择阅读顺序。</p>
+        <a href="https://zh.wikisource.org/wiki/紅樓夢/第023回" target="_blank" rel="noopener">读第二十三回：入园居住 ↗</a><br>
+        <p>构造参考原著相关回目；坐标、尺度与未写明细部为艺术编排。雪中终章借第五回《飞鸟各投林》作舞台化表达。当前插画为原创AI辅助演绎，画家参考为戴敦邦《红楼梦》画集。</p>
+        <a href="/reference/daguanyuan-reference.pdf" target="_blank" rel="noopener">查看原著空间参考 ↗</a>
+      </dialog>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

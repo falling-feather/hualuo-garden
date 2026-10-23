@@ -1,0 +1,10 @@
+{
+  "description": "真实院内读位；保留障景和邻屋，不用移除对象换取可见。坐标在所属单体局部，眼高由实际楼面复核。",
+  "views": [
+    {"id":"hengwu-front-steps","landmark":"hengwu","singleCharacter":true,"eye":[0,-0.65,1.83],"target":[0,0.55,2.2],"lens":20,"description":"绕过障景石，在厅前铺地近读左右楹联"},
+    {"id":"hengwu-left-couplet","landmark":"hengwu","singleCharacter":true,"eye":[-3,-0.65,1.55],"target":[-1.56,0.55,2.34],"lens":20,"description":"避开开启门扇，在西侧近读左联"},
+    {"id":"hengwu-right-couplet","landmark":"hengwu","singleCharacter":true,"eye":[3,-0.65,1.55],"target":[1.56,0.55,2.34],"lens":20,"description":"在东侧近读右联"},
+    {"id":"guensi-east-apron","landmark":"guensi","text":"省亲别墅","eye":[3,-16,1.77],"target":[0,-14.38,4.98],"lens":35,"description":"由殿前东南铺地侧读牌坊，避开芦雪屋面"},
+    {"id":"guensi-east-path","landmark":"guensi","text":"省亲别墅","eye":[4.5,-15.8,1.77],"target":[0,-14.38,4.98],"lens":38,"description":"东侧铺地的第二读位"}
+  ]
+}

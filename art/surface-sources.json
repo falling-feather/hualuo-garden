@@ -1,0 +1,76 @@
+[
+  {
+    "id": "bark_brown_02",
+    "name": "bark",
+    "author": "Rob Tuytel",
+    "physicalWidthMeters": 1,
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/bark_brown_02",
+    "maps": [
+      {
+        "file": "textures/bark-color.jpg",
+        "type": "Diffuse",
+        "resolution": "2k",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/bark_brown_02/bark_brown_02_diff_2k.jpg",
+        "bytes": 2356592,
+        "md5": "11a2a6039bb5b93f12dcf1689838545b",
+        "sha256": "285051e34826ace29f4ab438ad35cc1201b2aae0a6157a5f3c0bf6667bbc539e"
+      },
+      {
+        "file": "textures/bark-normal.png",
+        "type": "nor_gl",
+        "resolution": "1k",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/bark_brown_02/bark_brown_02_nor_gl_1k.png",
+        "bytes": 2436328,
+        "md5": "00616c5620413e714ea8a35848c6b2fc",
+        "sha256": "45c632c61b642759ee935a4300b71aa1e6097d2b2d8aae42376c4661ecc518eb"
+      },
+      {
+        "file": "textures/bark-roughness.jpg",
+        "type": "Rough",
+        "resolution": "1k",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_rough_1k.jpg",
+        "bytes": 337946,
+        "md5": "bbcde696e5b9418cdcb2abe638965417",
+        "sha256": "68125592de36e15bae7aa6db85c4d135aeb7e5653199ba226483a70f6d69837d"
+      }
+    ]
+  },
+  {
+    "id": "leafy_grass",
+    "name": "lawn",
+    "author": "Charlotte Baglioni",
+    "physicalWidthMeters": 2,
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/leafy_grass",
+    "maps": [
+      {
+        "file": "textures/lawn-color.jpg",
+        "type": "Diffuse",
+        "resolution": "2k",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leafy_grass/leafy_grass_diff_2k.jpg",
+        "bytes": 4766204,
+        "md5": "8014f4dace676a62ed71b3dd76119dae",
+        "sha256": "8e1c6d21365d4b89bc5a35ab664da98a78dbc3ab9ba6100474881c8619a5b113"
+      },
+      {
+        "file": "textures/lawn-normal.png",
+        "type": "nor_gl",
+        "resolution": "1k",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/leafy_grass/leafy_grass_nor_gl_1k.png",
+        "bytes": 6111876,
+        "md5": "a98f306f4dafb1e956d562b78503e174",
+        "sha256": "7cba8d8a3cbd14663fd974b73ecebcbb42e0cc258d912867e9dd67a5582ca4d9"
+      },
+      {
+        "file": "textures/lawn-roughness.jpg",
+        "type": "Rough",
+        "resolution": "1k",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_rough_1k.jpg",
+        "bytes": 511385,
+        "md5": "05f6bb1383e12b327727d313c5899cf2",
+        "sha256": "0c2a1d91aacb8e54a496051b59854e51e456fe858abeade778e308359ef16463"
+      }
+    ]
+  }
+]

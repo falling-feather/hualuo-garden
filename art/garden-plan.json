@@ -1,0 +1,2017 @@
+{
+  "schema": 1,
+  "title": "花落知多少",
+  "seed": 1723,
+  "bounds": [
+    -96,
+    -92,
+    96,
+    96
+  ],
+  "designNote": "院落构造和局部关系依据原著；总园坐标、尺度和构架细部为本项目设计补足，1 单位按 1 米建模，不是原著测绘复原。",
+  "water": {
+    "level": 0.04,
+    "lake": [
+      [
+        -5,
+        6
+      ],
+      [
+        2,
+        -5
+      ],
+      [
+        18,
+        -7
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        41,
+        14
+      ],
+      [
+        35,
+        25
+      ],
+      [
+        20,
+        32
+      ],
+      [
+        3,
+        28
+      ],
+      [
+        -7,
+        17
+      ]
+    ],
+    "rivers": [
+      {
+        "width": 3.8,
+        "points": [
+          [
+            58,
+            77
+          ],
+          [
+            54,
+            63
+          ],
+          [
+            48,
+            51
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            34,
+            28
+          ],
+          [
+            31,
+            22
+          ]
+        ]
+      },
+      {
+        "width": 4.4,
+        "points": [
+          [
+            14,
+            -4
+          ],
+          [
+            15,
+            -17
+          ],
+          [
+            22,
+            -29
+          ],
+          [
+            33,
+            -43
+          ],
+          [
+            40,
+            -54
+          ],
+          [
+            61,
+            -68
+          ],
+          [
+            84,
+            -72
+          ]
+        ]
+      },
+      {
+        "width": 3.0,
+        "points": [
+          [
+            -58,
+            58
+          ],
+          [
+            -41,
+            40
+          ],
+          [
+            -30,
+            30
+          ],
+          [
+            -29,
+            20
+          ],
+          [
+            -22,
+            12
+          ],
+          [
+            -8,
+            9
+          ],
+          [
+            0,
+            11
+          ]
+        ]
+      },
+      {
+        "width": 2.6,
+        "points": [
+          [
+            -28,
+            21
+          ],
+          [
+            -32,
+            2
+          ],
+          [
+            -31,
+            -17
+          ],
+          [
+            -24,
+            -35
+          ],
+          [
+            -8,
+            -47
+          ],
+          [
+            8,
+            -47
+          ],
+          [
+            28,
+            -49
+          ],
+          [
+            40,
+            -54
+          ]
+        ]
+      }
+    ]
+  },
+  "landmarks": [
+    {
+      "id": "gate",
+      "name": "大观园门",
+      "subtitle": "先见一带翠嶂",
+      "kind": "gate",
+      "position": [
+        0,
+        -80,
+        0.45
+      ],
+      "size": [
+        19,
+        6.8
+      ],
+      "bays": 5,
+      "rotation": 0,
+      "chapter": "第十七回",
+      "quote": "并无朱粉涂饰，一色水磨群墙。",
+      "description": "五间园门，素木细雕，粉墙石基。入园之后山石遮住远景，转折才渐渐展开。",
+      "evidence": [
+        "正门五间",
+        "未涂朱粉",
+        "粉墙与虎皮石基"
+      ],
+      "order": 1
+    },
+    {
+      "id": "screen",
+      "name": "曲径通幽处",
+      "subtitle": "石隙微露，转处见景",
+      "kind": "rockery",
+      "position": [
+        0,
+        -65,
+        0.25
+      ],
+      "size": [
+        20,
+        12
+      ],
+      "rotation": 0,
+      "chapter": "第十七回",
+      "quote": "其中微露羊肠小径。",
+      "description": "白石、苔痕与藤萝构成入口障景，小径穿过石隙，留下逐步探景的余地。",
+      "evidence": [
+        "翠嶂挡景",
+        "白石藤萝",
+        "小径入山口"
+      ],
+      "order": 2
+    },
+    {
+      "id": "qinfang",
+      "name": "沁芳亭",
+      "subtitle": "水边的一脉清香",
+      "kind": "bridge_pavilion",
+      "position": [
+        -8,
+        -47,
+        0.1
+      ],
+      "size": [
+        9,
+        7
+      ],
+      "rotation": 0.15,
+      "chapter": "第十七回",
+      "quote": "绕堤柳借三篙翠，隔岸花分一脉香。",
+      "description": "白石栏、环池与桥上亭相接。可在栏边看水经过，听风从柳枝间穿来。",
+      "evidence": [
+        "桥上有亭",
+        "白石为栏",
+        "环抱池沿"
+      ],
+      "order": 3
+    },
+    {
+      "id": "xiaoxiang",
+      "name": "潇湘馆",
+      "subtitle": "有凤来仪",
+      "kind": "xiaoxiang",
+      "position": [
+        -43,
+        -32,
+        0.4
+      ],
+      "size": [
+        25,
+        25
+      ],
+      "rotation": 0.07,
+      "chapter": "第十七、二十三、四十回",
+      "quote": "爱那几竿竹子隐着一道曲栏，比别处更觉幽静。",
+      "description": "粉垣翠竹、曲折游廊、前庭石子路与一明两暗的小舍。后院有梨花和芭蕉，细泉绕阶缘屋，窗下是书案。",
+      "evidence": [
+        "前后两庭",
+        "一明两暗",
+        "后院梨蕉",
+        "引泉绕屋"
+      ],
+      "order": 4,
+      "viewOverrides": {
+        "interior": [
+          -3.5,
+          2.1,
+          2.22
+        ],
+        "interiorLook": [
+          -3.0,
+          6.0,
+          1.85
+        ]
+      }
+    },
+    {
+      "id": "daoxiang",
+      "name": "稻香村",
+      "subtitle": "杏帘在望",
+      "kind": "daoxiang",
+      "position": [
+        -45,
+        7,
+        0.45
+      ],
+      "size": [
+        25,
+        24
+      ],
+      "rotation": -0.08,
+      "chapter": "第十七、十八、二十三回",
+      "quote": "一畦春韭绿，十里稻花香。",
+      "description": "黄泥矮墙、稻茎覆顶、茅檐纸窗，篱外有菜畦、土井与桔槔。杏花在屋旁，诗社的日常在此延续。",
+      "evidence": [
+        "黄泥矮墙",
+        "纸窗木榻",
+        "土井辘轳",
+        "蔬菜畦亩"
+      ],
+      "order": 5
+    },
+    {
+      "id": "huaxu",
+      "name": "花溆",
+      "subtitle": "水声出石隙",
+      "kind": "grotto",
+      "position": [
+        -29,
+        29,
+        0.2
+      ],
+      "size": [
+        17,
+        11
+      ],
+      "rotation": -0.25,
+      "chapter": "第十七、十八回",
+      "quote": "上则萝薜倒垂，下则落花浮荡。",
+      "description": "溪水穿过山石，藤萝低垂，桃柳沿水而生。朱栏折带板桥把两岸游路接在一起。",
+      "evidence": [
+        "石洞出水",
+        "折带朱栏板桥",
+        "垂柳桃杏"
+      ],
+      "order": 6
+    },
+    {
+      "id": "hengwu",
+      "name": "蘅芜苑",
+      "subtitle": "蘅芷清芬",
+      "kind": "hengwu",
+      "position": [
+        -42,
+        48,
+        0.55
+      ],
+      "size": [
+        26,
+        25
+      ],
+      "rotation": 0.02,
+      "chapter": "第十七、十八、四十回",
+      "quote": "吟成豆蔻才犹艳，睡足荼蘼梦也香。",
+      "description": "玲珑山石遮住房屋，香草攀缘石隙。五间清厦连卷棚，绿窗与抄手游廊围成清雅庭院，居室陈设素净。",
+      "evidence": [
+        "山石遮屋",
+        "五间清厦",
+        "绿窗油壁",
+        "室内素净"
+      ],
+      "order": 7,
+      "viewOverrides": {
+        "interior": [
+          5.8,
+          1.9,
+          2.28
+        ],
+        "interiorLook": [
+          -2.2,
+          4.8,
+          1.82
+        ]
+      }
+    },
+    {
+      "id": "guensi",
+      "name": "顾恩思义殿",
+      "subtitle": "省亲别墅",
+      "kind": "ceremony",
+      "position": [
+        1,
+        43,
+        0.6
+      ],
+      "size": [
+        24,
+        15
+      ],
+      "rotation": 0,
+      "chapter": "第十七、十八回",
+      "quote": "崇阁巍峨，层楼高起。",
+      "description": "玉石牌坊、台阶和正殿形成礼仪空间；殿前松石、栏杆与铺地依次展开。",
+      "evidence": [
+        "正殿",
+        "玉石牌坊",
+        "礼仪性楼阁"
+      ],
+      "order": 8
+    },
+    {
+      "id": "daguanlou",
+      "name": "大观楼",
+      "subtitle": "正楼临园",
+      "kind": "tower",
+      "position": [
+        1,
+        66,
+        0.65
+      ],
+      "size": [
+        20,
+        13
+      ],
+      "rotation": 0,
+      "chapter": "第十八回",
+      "quote": "衔山抱水建来精，多少工夫筑始成。",
+      "description": "省亲建筑群的正楼，重檐与通廊环抱。从高处可以回望园中的山水和院落。",
+      "evidence": [
+        "正楼名大观楼",
+        "复道与玉栏"
+      ],
+      "order": 9
+    },
+    {
+      "id": "hanfang",
+      "name": "含芳阁",
+      "subtitle": "西面斜楼",
+      "kind": "side_tower",
+      "position": [
+        -20,
+        63,
+        0.55
+      ],
+      "size": [
+        11,
+        10
+      ],
+      "rotation": -0.1,
+      "chapter": "第十八回",
+      "quote": "西面斜楼曰含芳阁。",
+      "description": "位于大观楼西侧的楼阁，与东侧飞楼共同围合礼仪建筑的视线。",
+      "evidence": [
+        "大观楼西侧"
+      ],
+      "order": 10
+    },
+    {
+      "id": "zhuijinge",
+      "name": "缀锦阁",
+      "subtitle": "东面飞楼",
+      "kind": "side_tower",
+      "position": [
+        23,
+        63,
+        0.55
+      ],
+      "size": [
+        11,
+        10
+      ],
+      "rotation": 0.1,
+      "chapter": "第十八、四十回",
+      "quote": "东面飞楼曰缀锦阁。",
+      "description": "位于大观楼东侧。楼下曾设宴，隔水可以听见藕香榭上传来的乐声。",
+      "evidence": [
+        "大观楼东侧",
+        "楼下设宴"
+      ],
+      "order": 11
+    },
+    {
+      "id": "sluice",
+      "name": "沁芳闸",
+      "subtitle": "活水从园外来",
+      "kind": "sluice",
+      "position": [
+        54,
+        64,
+        0.05
+      ],
+      "size": [
+        13,
+        8
+      ],
+      "rotation": 0.1,
+      "chapter": "第十七、二十三回",
+      "quote": "这桥便是通外河之闸，引泉而入者。",
+      "description": "外河与园中水系在此连接。石岸、闸门和跨水通道保留水的来去。",
+      "evidence": [
+        "引外河活水",
+        "大桥与闸"
+      ],
+      "order": 12
+    },
+    {
+      "id": "longcui",
+      "name": "栊翠庵",
+      "subtitle": "梅香与茶",
+      "kind": "temple",
+      "position": [
+        37,
+        44,
+        3.4
+      ],
+      "size": [
+        21,
+        20
+      ],
+      "rotation": -0.12,
+      "chapter": "第四十一、四十九、五十回",
+      "quote": "十数株红梅如胭脂一般，映着雪色。",
+      "description": "花木围院，东禅堂与耳房形成不同的接待空间。红梅、茶炉与蒲团留下妙玉的生活线索。",
+      "evidence": [
+        "东禅堂与耳房",
+        "红梅",
+        "茶炉与蒲团"
+      ],
+      "order": 13
+    },
+    {
+      "id": "cubi",
+      "name": "凸碧山庄",
+      "subtitle": "山高月小",
+      "kind": "hill_hall",
+      "position": [
+        61,
+        31,
+        7.8
+      ],
+      "size": [
+        17,
+        12
+      ],
+      "rotation": -0.25,
+      "chapter": "第七十五、七十六回",
+      "quote": "这山之高处，就叫凸碧。",
+      "description": "山脊上的敞厅，厅前平台可以设席。由此下坡转弯，便抵达近水的凹晶溪馆。",
+      "evidence": [
+        "山脊敞厅",
+        "厅前平台",
+        "高于凹晶"
+      ],
+      "order": 14
+    },
+    {
+      "id": "aojing",
+      "name": "凹晶溪馆",
+      "subtitle": "皓月清波",
+      "kind": "waterside",
+      "position": [
+        45,
+        12,
+        0.45
+      ],
+      "size": [
+        13,
+        8
+      ],
+      "rotation": -0.25,
+      "chapter": "第七十六回",
+      "quote": "天上一轮皓月，池中一轮水月。",
+      "description": "山怀低洼近水的矮小房舍，卷棚底下可坐竹墩赏月；沿池竹栏路与藕香榭相通。",
+      "evidence": [
+        "低洼近水",
+        "房屋矮小",
+        "卷棚与湘妃竹墩"
+      ],
+      "order": 15
+    },
+    {
+      "id": "ouxiang",
+      "name": "藕香榭",
+      "subtitle": "跨水接岸",
+      "kind": "water_pavilion",
+      "position": [
+        16,
+        6,
+        0.15
+      ],
+      "size": [
+        13,
+        10
+      ],
+      "rotation": 0.15,
+      "chapter": "第三十八、四十回",
+      "quote": "四面有窗，左右有曲廊可通。",
+      "description": "池中水榭，曲廊与竹桥把水岸接起。桂花、蟹宴与隔水乐声，使此处成为园中交往的所在。",
+      "evidence": [
+        "池中四面窗",
+        "曲廊跨水",
+        "后接竹桥"
+      ],
+      "order": 16
+    },
+    {
+      "id": "luxue",
+      "name": "芦雪广",
+      "subtitle": "拥炉听雪",
+      "kind": "reed_hut",
+      "position": [
+        -5,
+        25,
+        0.3
+      ],
+      "size": [
+        15,
+        8
+      ],
+      "rotation": 0.1,
+      "chapter": "第四十九、五十回",
+      "quote": "茅檐土壁，槿篱竹牖，推窗便可垂钓。",
+      "description": "傍山临水的河滩小屋，芦苇掩映，屋内有地炕。穿芦的小径通往藕香榭竹桥。",
+      "evidence": [
+        "河滩茅舍",
+        "地炕",
+        "芦苇",
+        "通竹桥"
+      ],
+      "order": 17
+    },
+    {
+      "id": "nuanxiang",
+      "name": "暖香坞",
+      "subtitle": "园图在此展开",
+      "kind": "nuanxiang",
+      "position": [
+        -20,
+        8,
+        0.45
+      ],
+      "size": [
+        20,
+        20
+      ],
+      "rotation": 0.04,
+      "chapter": "第二十三、三十七、五十、七十四回",
+      "quote": "早有几个人打起猩红毡帘，已觉温香拂脸。",
+      "description": "惜春相关居所，以夹道、朝南院门、游廊和卧房组织。纸绢、画案与帘幕留下画园的时刻。",
+      "evidence": [
+        "夹道过街门",
+        "朝南正门",
+        "惜春卧房",
+        "邻近稻香与秋爽"
+      ],
+      "order": 18,
+      "viewOverrides": {
+        "interior": [
+          -4.3,
+          -0.6,
+          2.25
+        ],
+        "interiorLook": [
+          1.7,
+          2.0,
+          1.77
+        ]
+      }
+    },
+    {
+      "id": "qiushuang",
+      "name": "秋爽斋",
+      "subtitle": "蕉下客的书案",
+      "kind": "qiushuang",
+      "position": [
+        -13,
+        -17,
+        0.45
+      ],
+      "size": [
+        22,
+        21
+      ],
+      "rotation": -0.04,
+      "chapter": "第二十三、三十七、四十回",
+      "quote": "探春素喜阔朗，这三间屋子并不曾隔断。",
+      "description": "三间通敞的居室，大案、法帖、笔砚、白菊与佛手陈列其间。院中梧桐芭蕉，诗社在此发起。",
+      "evidence": [
+        "三间不隔断",
+        "东榻西画",
+        "大案笔砚",
+        "梧桐芭蕉"
+      ],
+      "order": 19,
+      "viewOverrides": {
+        "interior": [
+          -5.5,
+          -0.2,
+          2.32
+        ],
+        "interiorLook": [
+          1.5,
+          2.7,
+          1.82
+        ]
+      }
+    },
+    {
+      "id": "dicui",
+      "name": "滴翠亭",
+      "subtitle": "隔纸听人语",
+      "kind": "small_water_pavilion",
+      "position": [
+        15,
+        -21,
+        0.1
+      ],
+      "size": [
+        8,
+        7
+      ],
+      "rotation": 0.2,
+      "chapter": "第二十七回",
+      "quote": "四面雕镂隔子糊着纸。",
+      "description": "水上的亭子，曲桥和游廊环绕，纸糊隔子留下能听见却不能尽见的层次。",
+      "evidence": [
+        "池中水上",
+        "曲桥游廊",
+        "纸糊隔子"
+      ],
+      "order": 20
+    },
+    {
+      "id": "zhuijinlou",
+      "name": "缀锦楼",
+      "subtitle": "紫菱洲的旧日棋声",
+      "kind": "yingchun",
+      "position": [
+        62,
+        -10,
+        0.45
+      ],
+      "size": [
+        21,
+        21
+      ],
+      "rotation": -0.1,
+      "chapter": "第二十三、三十七、七十九回",
+      "quote": "不闻永昼敲棋声，燕泥点点污棋枰。",
+      "description": "迎春相关的居所与紫菱洲水岸相接。轩窗、棋案、蓼花与苇叶保存着曾经的日常。",
+      "evidence": [
+        "迎春住缀锦楼",
+        "紫菱洲相关",
+        "轩窗与棋枰"
+      ],
+      "order": 21,
+      "viewOverrides": {
+        "interior": [
+          -4.3,
+          -0.1,
+          2.25
+        ],
+        "interiorLook": [
+          1.7,
+          2.5,
+          1.77
+        ]
+      }
+    },
+    {
+      "id": "yihong",
+      "name": "怡红院",
+      "subtitle": "怡红快绿",
+      "kind": "yihong",
+      "position": [
+        43,
+        -42,
+        0.5
+      ],
+      "size": [
+        28,
+        27
+      ],
+      "rotation": -0.04,
+      "chapter": "第十七、十八、二十六、四十一回",
+      "quote": "此处蕉棠两植，其意暗蓄红绿二字在内。",
+      "description": "蕉棠对植的庭院，游廊、透雕隔扇与镜像相互掩映。后院花架之后是青溪，多股水流在此相会。",
+      "evidence": [
+        "芭蕉与西府海棠",
+        "透隔与镜",
+        "后院花架",
+        "溪水合流"
+      ],
+      "order": 22,
+      "viewOverrides": {
+        "interior": [
+          6.3,
+          2.7,
+          2.3
+        ],
+        "interiorLook": [
+          -2.5,
+          5.6,
+          1.82
+        ]
+      }
+    }
+  ],
+  "circulation": {
+    "nodes": [
+      {
+        "id": "arrival",
+        "position": [
+          0,
+          -88
+        ]
+      },
+      {
+        "id": "gate-inner",
+        "position": [
+          0,
+          -73.2
+        ]
+      },
+      {
+        "id": "south-west",
+        "position": [
+          -10,
+          -54
+        ]
+      },
+      {
+        "id": "qin-west-bank",
+        "position": [
+          -18,
+          -51.5
+        ]
+      },
+      {
+        "id": "qin-east-bank",
+        "position": [
+          3,
+          -40
+        ]
+      },
+      {
+        "id": "xiao-front",
+        "position": [
+          -44,
+          -49
+        ]
+      },
+      {
+        "id": "west-south",
+        "position": [
+          -63,
+          -44
+        ]
+      },
+      {
+        "id": "west-middle",
+        "position": [
+          -65,
+          -13
+        ]
+      },
+      {
+        "id": "west-north",
+        "position": [
+          -65,
+          25
+        ]
+      },
+      {
+        "id": "dao-front",
+        "position": [
+          -45,
+          -9
+        ]
+      },
+      {
+        "id": "heng-front",
+        "position": [
+          -43,
+          30
+        ]
+      },
+      {
+        "id": "grotto-west",
+        "position": [
+          -42,
+          25
+        ]
+      },
+      {
+        "id": "grotto-east",
+        "position": [
+          -16,
+          25
+        ]
+      },
+      {
+        "id": "warm-front",
+        "position": [
+          -20,
+          -5
+        ]
+      },
+      {
+        "id": "qiu-front",
+        "position": [
+          -14,
+          -31
+        ]
+      },
+      {
+        "id": "qiu-east",
+        "position": [
+          2,
+          -16
+        ]
+      },
+      {
+        "id": "lake-southwest",
+        "position": [
+          -1,
+          -8
+        ]
+      },
+      {
+        "id": "ou-west-bank",
+        "position": [
+          -5,
+          -1
+        ]
+      },
+      {
+        "id": "palace-front",
+        "position": [
+          13,
+          33
+        ]
+      },
+      {
+        "id": "palace-west",
+        "position": [
+          -15,
+          32
+        ]
+      },
+      {
+        "id": "palace-northwest",
+        "position": [
+          -18,
+          51
+        ]
+      },
+      {
+        "id": "palace-middle",
+        "position": [
+          1,
+          54
+        ]
+      },
+      {
+        "id": "palace-east",
+        "position": [
+          24,
+          54
+        ]
+      },
+      {
+        "id": "north-east",
+        "position": [
+          67,
+          62
+        ]
+      },
+      {
+        "id": "outer-east",
+        "position": [
+          79,
+          43
+        ]
+      },
+      {
+        "id": "cubi-front",
+        "position": [
+          57,
+          13
+        ]
+      },
+      {
+        "id": "cubi-east",
+        "position": [
+          76,
+          17
+        ]
+      },
+      {
+        "id": "ao-east-bank",
+        "position": [
+          55,
+          7
+        ]
+      },
+      {
+        "id": "di-west-bank",
+        "position": [
+          6,
+          -25
+        ]
+      },
+      {
+        "id": "di-east-bank",
+        "position": [
+          24,
+          -18
+        ]
+      },
+      {
+        "id": "zhuijin-front",
+        "position": [
+          61,
+          -25
+        ]
+      },
+      {
+        "id": "east-middle",
+        "position": [
+          78,
+          -15
+        ]
+      },
+      {
+        "id": "east-south",
+        "position": [
+          72,
+          -36
+        ]
+      },
+      {
+        "id": "south-east",
+        "position": [
+          16,
+          -72
+        ]
+      },
+      {
+        "id": "yihong-front",
+        "position": [
+          43,
+          -64
+        ]
+      },
+      {
+        "id": "yihong-east",
+        "position": [
+          63,
+          -59
+        ]
+      },
+      {
+        "id": "palace-corner",
+        "position": [
+          13,
+          53
+        ]
+      },
+      {
+        "id": "warm-west",
+        "position": [
+          -26.8,
+          -4.7
+        ]
+      },
+      {
+        "id": "hill-fork",
+        "position": [
+          69,
+          12
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "id": "arrival",
+        "from": "arrival",
+        "to": "gate:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.6,
+        "arch": 0
+      },
+      {
+        "id": "gate-inner",
+        "from": "gate:rear",
+        "to": "gate-inner",
+        "via": [],
+        "surface": "ground",
+        "width": 2.7,
+        "arch": 0
+      },
+      {
+        "id": "gate-screen",
+        "from": "gate-inner",
+        "to": "screen:entry",
+        "via": [
+          [
+            -6,
+            -76
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "screen-passage",
+        "from": "screen:entry",
+        "to": "screen:rear",
+        "via": [],
+        "surface": "ground",
+        "width": 2,
+        "arch": 0
+      },
+      {
+        "id": "screen-qin",
+        "from": "screen:rear",
+        "to": "south-west",
+        "via": [],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "qin-west-approach",
+        "from": "south-west",
+        "to": "qin-west-bank",
+        "via": [],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "qin-west",
+        "from": "qin-west-bank",
+        "to": "qinfang:west",
+        "via": [],
+        "surface": "stone",
+        "width": 2.45,
+        "arch": 0.18
+      },
+      {
+        "id": "qin-east",
+        "from": "qinfang:east",
+        "to": "qin-east-bank",
+        "via": [
+          [
+            0.5,
+            -45
+          ]
+        ],
+        "surface": "stone",
+        "width": 2.45,
+        "arch": 0.18
+      },
+      {
+        "id": "qin-xiao",
+        "from": "qin-west-bank",
+        "to": "xiao-front",
+        "via": [
+          [
+            -29,
+            -50
+          ],
+          [
+            -37,
+            -50
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "xiaoxiang-entry",
+        "from": "xiao-front",
+        "to": "xiaoxiang:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.15,
+        "arch": 0
+      },
+      {
+        "id": "west-south",
+        "from": "xiao-front",
+        "to": "west-south",
+        "via": [
+          [
+            -55,
+            -50
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "west-middle",
+        "from": "west-south",
+        "to": "west-middle",
+        "via": [
+          [
+            -65,
+            -30
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "dao-approach",
+        "from": "west-middle",
+        "to": "dao-front",
+        "via": [
+          [
+            -58,
+            -9
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "daoxiang-entry",
+        "from": "dao-front",
+        "to": "daoxiang:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "west-north",
+        "from": "west-middle",
+        "to": "west-north",
+        "via": [
+          [
+            -67,
+            6
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "heng-approach",
+        "from": "west-north",
+        "to": "heng-front",
+        "via": [
+          [
+            -56,
+            28
+          ],
+          [
+            -49,
+            29
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "hengwu-entry",
+        "from": "heng-front",
+        "to": "hengwu:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.15,
+        "arch": 0
+      },
+      {
+        "id": "grotto-west-path",
+        "from": "heng-front",
+        "to": "grotto-west",
+        "via": [],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "grotto-west",
+        "from": "grotto-west",
+        "to": "huaxu:west",
+        "via": [],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "grotto-east",
+        "from": "huaxu:east",
+        "to": "grotto-east",
+        "via": [],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "grotto-palace",
+        "from": "grotto-east",
+        "to": "palace-west",
+        "via": [
+          [
+            -14,
+            28
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "dao-warm",
+        "from": "dao-front",
+        "to": "nuanxiang:passage-west-outer",
+        "via": [
+          [
+            -37,
+            -8
+          ]
+        ],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "nuanxiang-entry",
+        "from": "warm-front",
+        "to": "nuanxiang:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.15,
+        "arch": 0
+      },
+      {
+        "id": "warm-qiu",
+        "from": "warm-west",
+        "to": "qiu-front",
+        "via": [
+          [
+            -26.4,
+            -8
+          ],
+          [
+            -26.9,
+            -23
+          ],
+          [
+            -28,
+            -30
+          ]
+        ],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "qiushuang-entry",
+        "from": "qiu-front",
+        "to": "qiushuang:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.15,
+        "arch": 0
+      },
+      {
+        "id": "qiu-qin",
+        "from": "qiu-front",
+        "to": "qin-east-bank",
+        "via": [
+          [
+            -3,
+            -34
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "qiu-southeast",
+        "from": "qiu-front",
+        "to": "di-west-bank",
+        "via": [
+          [
+            -1,
+            -31
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "qiu-east",
+        "from": "di-west-bank",
+        "to": "qiu-east",
+        "via": [
+          [
+            3,
+            -22
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "lake-southwest",
+        "from": "qiu-east",
+        "to": "lake-southwest",
+        "via": [
+          [
+            1,
+            -11
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "ou-west-shore",
+        "from": "lake-southwest",
+        "to": "ou-west-bank",
+        "via": [
+          [
+            0,
+            -3.5
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "warm-water",
+        "from": "warm-front",
+        "to": "nuanxiang:passage-east-inner",
+        "via": [
+          [
+            -15,
+            -4.3
+          ]
+        ],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "ouxiang-west",
+        "from": "ou-west-bank",
+        "to": "ouxiang:west",
+        "via": [
+          [
+            0,
+            1
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "surface": "timber",
+        "width": 2.35,
+        "arch": 0,
+        "covered": true
+      },
+      {
+        "id": "ouxiang-east",
+        "from": "ouxiang:east",
+        "to": "aojing:west",
+        "via": [
+          [
+            29,
+            3.5
+          ]
+        ],
+        "surface": "timber",
+        "width": 2,
+        "arch": 0,
+        "covered": true
+      },
+      {
+        "id": "ouxiang-rear",
+        "from": "ouxiang:north",
+        "to": "luxue:entry",
+        "via": [
+          [
+            10,
+            16
+          ],
+          [
+            2,
+            13
+          ]
+        ],
+        "surface": "bamboo",
+        "width": 1.8,
+        "arch": 0
+      },
+      {
+        "id": "reed-palace",
+        "from": "luxue:west",
+        "to": "palace-west",
+        "via": [
+          [
+            -13,
+            21
+          ],
+          [
+            -14,
+            28
+          ]
+        ],
+        "surface": "ground",
+        "width": 2,
+        "arch": 0
+      },
+      {
+        "id": "palace-entry",
+        "from": "palace-front",
+        "to": "guensi:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.3,
+        "arch": 0
+      },
+      {
+        "id": "palace-west",
+        "from": "guensi:west",
+        "to": "palace-west",
+        "via": [],
+        "surface": "ground",
+        "width": 2.4,
+        "arch": 0
+      },
+      {
+        "id": "palace-west-side",
+        "from": "palace-west",
+        "to": "palace-northwest",
+        "via": [
+          [
+            -15,
+            43
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.3,
+        "arch": 0
+      },
+      {
+        "id": "hanfang-entry",
+        "from": "palace-northwest",
+        "to": "hanfang:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "palace-middle",
+        "from": "palace-northwest",
+        "to": "palace-middle",
+        "via": [
+          [
+            -15,
+            49
+          ],
+          [
+            -12,
+            49
+          ],
+          [
+            -12,
+            52.4
+          ],
+          [
+            -8.6,
+            52.4
+          ]
+        ],
+        "surface": "ground",
+        "width": 1.6,
+        "arch": 0
+      },
+      {
+        "id": "daguanlou-entry",
+        "from": "palace-middle",
+        "to": "daguanlou:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "palace-east-path",
+        "from": "palace-middle",
+        "to": "palace-corner",
+        "via": [
+          [
+            8,
+            53
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "zhuijinge-entry",
+        "from": "palace-east",
+        "to": "zhuijinge:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "sluice-west",
+        "from": "palace-corner",
+        "to": "sluice:west",
+        "via": [
+          [
+            14.8,
+            59
+          ],
+          [
+            14.8,
+            73
+          ],
+          [
+            33,
+            75
+          ],
+          [
+            43,
+            70
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.4,
+        "arch": 0
+      },
+      {
+        "id": "sluice-east",
+        "from": "sluice:east",
+        "to": "north-east",
+        "via": [],
+        "surface": "ground",
+        "width": 2.4,
+        "arch": 0
+      },
+      {
+        "id": "northeast-path",
+        "from": "north-east",
+        "to": "outer-east",
+        "via": [
+          [
+            76,
+            56
+          ],
+          [
+            80,
+            49
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "cubi-east-path",
+        "from": "outer-east",
+        "to": "cubi-east",
+        "via": [
+          [
+            81,
+            31
+          ]
+        ],
+        "surface": "ground",
+        "width": 2,
+        "arch": 0
+      },
+      {
+        "id": "cubi-south-path",
+        "from": "cubi-east",
+        "to": "hill-fork",
+        "via": [
+          [
+            74,
+            13
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.1,
+        "arch": 0
+      },
+      {
+        "id": "cubi-entry",
+        "from": "cubi-front",
+        "to": "cubi:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "ao-east-path",
+        "from": "hill-fork",
+        "to": "ao-east-bank",
+        "via": [
+          [
+            71,
+            6
+          ],
+          [
+            65,
+            4
+          ],
+          [
+            59,
+            3
+          ]
+        ],
+        "surface": "ground",
+        "width": 2,
+        "arch": 0
+      },
+      {
+        "id": "aojing-entry",
+        "from": "aojing:east",
+        "to": "ao-east-bank",
+        "via": [],
+        "surface": "ground",
+        "width": 2,
+        "arch": 0
+      },
+      {
+        "id": "longcui-entry",
+        "from": "palace-front",
+        "to": "longcui:entry",
+        "via": [
+          [
+            23,
+            29
+          ],
+          [
+            30,
+            28
+          ],
+          [
+            35,
+            30
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.0,
+        "arch": 0
+      },
+      {
+        "id": "dicui-west",
+        "from": "di-west-bank",
+        "to": "dicui:west",
+        "via": [],
+        "surface": "timber",
+        "width": 2.35,
+        "arch": 0
+      },
+      {
+        "id": "dicui-east",
+        "from": "dicui:east",
+        "to": "di-east-bank",
+        "via": [],
+        "surface": "timber",
+        "width": 2.35,
+        "arch": 0
+      },
+      {
+        "id": "east-lake",
+        "from": "di-east-bank",
+        "to": "ao-east-bank",
+        "via": [
+          [
+            31,
+            -11
+          ],
+          [
+            42,
+            0
+          ],
+          [
+            54,
+            4.5
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.1,
+        "arch": 0
+      },
+      {
+        "id": "zhuijin-west-path",
+        "from": "di-east-bank",
+        "to": "zhuijin-front",
+        "via": [
+          [
+            37,
+            -22
+          ],
+          [
+            48,
+            -25
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.1,
+        "arch": 0
+      },
+      {
+        "id": "zhuijinlou-entry",
+        "from": "zhuijin-front",
+        "to": "zhuijinlou:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.15,
+        "arch": 0
+      },
+      {
+        "id": "east-middle",
+        "from": "cubi-east",
+        "to": "east-middle",
+        "via": [
+          [
+            80,
+            5
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "east-south",
+        "from": "east-middle",
+        "to": "east-south",
+        "via": [
+          [
+            78,
+            -28
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "zhuijin-east-path",
+        "from": "east-south",
+        "to": "zhuijin-front",
+        "via": [
+          [
+            70,
+            -28
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "south-east-path",
+        "from": "gate-inner",
+        "to": "south-east",
+        "via": [
+          [
+            7,
+            -75
+          ],
+          [
+            12,
+            -75
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "south-yihong",
+        "from": "south-east",
+        "to": "yihong-front",
+        "via": [
+          [
+            27,
+            -67
+          ],
+          [
+            36,
+            -63
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "yihong-entry",
+        "from": "yihong-front",
+        "to": "yihong:entry",
+        "via": [],
+        "surface": "ground",
+        "width": 2.15,
+        "arch": 0
+      },
+      {
+        "id": "yihong-east-path",
+        "from": "yihong-front",
+        "to": "yihong-east",
+        "via": [
+          [
+            53,
+            -61
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.1,
+        "arch": 0
+      },
+      {
+        "id": "east-outer-path",
+        "from": "yihong-east",
+        "to": "east-south",
+        "via": [
+          [
+            69,
+            -47
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.2,
+        "arch": 0
+      },
+      {
+        "id": "palace-east-forecourt",
+        "from": "palace-corner",
+        "to": "palace-east",
+        "via": [],
+        "surface": "ground",
+        "width": 2.5,
+        "arch": 0
+      },
+      {
+        "id": "warm-front-link",
+        "from": "warm-west",
+        "to": "warm-front",
+        "via": [],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "warm-west-gateway",
+        "from": "nuanxiang:passage-west-inner",
+        "to": "warm-west",
+        "via": [],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "warm-east-shore",
+        "from": "nuanxiang:passage-east-outer",
+        "to": "ou-west-bank",
+        "via": [],
+        "surface": "ground",
+        "width": 1.9,
+        "arch": 0
+      },
+      {
+        "id": "hill-south-spine",
+        "from": "hill-fork",
+        "to": "cubi-front",
+        "via": [
+          [
+            63,
+            13
+          ]
+        ],
+        "surface": "ground",
+        "width": 2.1,
+        "arch": 0
+      }
+    ]
+  }
+}
